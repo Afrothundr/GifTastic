@@ -21,7 +21,7 @@ $(document).ready(function() {
 		//add the data-name attr to our searchGif varible
 		var searchGif = $(this).attr("data-name");
 		//add that variable to the api url
-		queryURL = "http://api.giphy.com/v1/gifs/search?api_key=p3BIY6JQuEhiPJvQw52ZySraz4pDFwMX&q=" + searchGif + "&limit=10&offset=0&lang=en";
+		queryURL = "https://api.giphy.com/v1/gifs/search?api_key=p3BIY6JQuEhiPJvQw52ZySraz4pDFwMX&q=" + searchGif + "&limit=10&offset=0&lang=en";
 		//run ajax call using our dynamic URL
 		$.ajax({
           url: queryURL,
